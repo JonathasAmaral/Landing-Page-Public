@@ -2,6 +2,8 @@
 
 Este é um projeto de uma página de destino (Landing Page) simples desenvolvida com HTML, CSS e JavaScript.
 
+link: https://jonathasamaral.github.io/Landing-Page-Public/
+
 ## Tecnologias Utilizadas
 
 - **HTML**: Utilizado para a estruturação do conteúdo da página.
