@@ -1,6 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
     initCTAButtons();
     initMenuToggle();
+    initNavHighlight();
+    closeMenu();
+    TypeWriter()
 });
 
 /*Mensagem de sucesso*/
@@ -51,16 +54,7 @@ function initNavHighlight() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  initMenuToggle();
-  initNavHighlight();
-});
-
 // Ao carregar a página, inicializa tudo
-document.addEventListener("DOMContentLoaded", () => {
-  initMenuToggle();
-  initNavHighlight();
-});
 
 // video button (Play / Pause)
 const video = document.getElementById("video-marketing");
@@ -116,9 +110,9 @@ function toggleTheme() {
   });
 
 // close menu 
-document.addEventListener("DOMContentLoaded", () => {
+function closeMenu () {
     const navMenu = document.querySelector(".navbar-nav");
-  
+
     navMenu.addEventListener("click", (event) => {
       // Verifica se o clique ocorreu em um <a> ou em um elemento dentro de um <a>
       if (event.target.closest("a")) {
@@ -128,6 +122,21 @@ document.addEventListener("DOMContentLoaded", () => {
         menuToggle.classList.remove("active");
       }
     });
-});
+}
 
-// navbar line-bottom
+// Efeito Maquina de escrever
+function TypeWriter () {
+  const text = `Saiba como vencer um dos problemas que mais afeta as pessoas no último século`;
+  const typewriter = document.getElementById("typewriter");
+  const speed = 80; // Intervalo (ms) entre cada caractere
+
+  for (let i = 0; i < text.length; i++) {
+    setTimeout(() => {
+      if (text.charAt(i) === "\n") {
+        typewriter.innerHTML += "<br>";
+      } else {
+        typewriter.innerHTML += text.charAt(i);
+      }
+    }, i * speed);
+  }
+}
