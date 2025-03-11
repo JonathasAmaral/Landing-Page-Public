@@ -61,6 +61,11 @@ body {
     font-size: 14px;
 }
 
+.logo {
+    width: 28px;
+    height: 42px;
+}
+
 /* Botão do menu hamburguer */
 .menu-toggle {
     display: none;
@@ -115,9 +120,10 @@ body {
     gap: 16px;
 }
 
-.video-container h1 {
+.video-container h1 {     /* Alinha o conteúdo à direita */   /* Respeita quebras de linha (\n) */
     font-size: 28px;
     color: var(--primary-color);
+    max-width: 900px;
 }
 
 .video-box {
@@ -146,7 +152,7 @@ body {
 .video {
     border-radius: 16px;
     width: 100%;
-    max-width: 960px;
+    max-width: 900px;
 }
 
 .cta {
@@ -414,6 +420,7 @@ footer {
     .navbar-nav.show {
         display: flex;
         justify-content: flex-start;
+        margin-top: 12px;
         background-color: var(--base-variant);
         pointer-events: auto;
     }
@@ -468,6 +475,7 @@ footer {
 
     .banner {
         padding: 10px;
+        border-radius: 0;
     }
     
     .banner h2 {
@@ -476,5 +484,9 @@ footer {
 
     .Comment-container {
         grid-template-columns: 1fr;
+    }
+
+    .video-container h1 {
+        font-size: 20px;
     }
 }
