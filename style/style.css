@@ -120,6 +120,11 @@ body {
     gap: 16px;
 }
 
+#typewriter {
+    padding: 0 20%;
+    align-self: flex-start;
+}
+
 .video-container h1 {     /* Alinha o conteúdo à direita */   /* Respeita quebras de linha (\n) */
     font-size: 28px;
     color: var(--primary-color);
@@ -398,6 +403,10 @@ footer {
     .Comment-box {
         flex-direction: column;
         margin: 0 auto;
+    }
+
+    #typewriter {
+    padding: 0 0;
     }
 }
 
