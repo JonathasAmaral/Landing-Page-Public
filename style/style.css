@@ -84,6 +84,7 @@ body {
     position: sticky;
     top: 0;
     background-color: var(--base-variant);
+    opacity: 97%;
     padding: 10px 20px;
     z-index: 1000;
 }
